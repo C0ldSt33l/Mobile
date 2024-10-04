@@ -15,18 +15,16 @@
         android:layout_width="0dp"
         android:layout_height="121dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="232dp"
         android:layout_marginEnd="50dp"
+        android:layout_marginBottom="180dp"
         android:ems="10"
         android:hint="Введите число"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/Result"
+        app:layout_constraintBottom_toTopOf="@+id/FindButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/FindButton"
@@ -49,15 +47,18 @@
         android:layout_width="0dp"
         android:layout_height="87dp"
         android:layout_marginStart="90dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="90dp"
-        android:layout_marginBottom="80dp"
         android:hint="Результат"
         android:hyphenationFrequency="normal"
         android:textAlignment="center"
+        android:textIsSelectable="true"
         android:textSize="45sp"
-        app:layout_constraintBottom_toTopOf="@+id/FindButton"
+        app:layout_constraintBottom_toTopOf="@+id/NumberField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
