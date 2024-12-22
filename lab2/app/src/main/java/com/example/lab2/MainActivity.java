@@ -1,15 +1,11 @@
 package com.example.lab2;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -50,20 +46,20 @@ public class MainActivity extends AppCompatActivity {
         this.filterBtn.setOnClickListener(view -> this.createFilterMenu());
 
         this.cards = new Card[] {
-                new Card(this, "мебель", "стул", 50),
-                new Card(this, "мебель", "диван", 30),
+                new Card(this, "мебель", "Стул", 50, R.drawable.chair),
+                new Card(this, "мебель", "Диван", 30, R.drawable.sofa),
 
-                new Card(this, "бытовая техника", "стиральная машина", 30),
-                new Card(this, "бытовая техника", "холодильник", 30),
+                new Card(this, "бытовая техника", "Стиральная машина", 30, R.drawable.wash_mashin),
+                new Card(this, "бытовая техника", "Холодильник", 30, R.drawable.freeze),
 
-                new Card(this, "еда", "бургер", 30),
-                new Card(this, "еда", "салат", 30),
+                new Card(this, "еда", "Бургер", 30, R.drawable.burger),
+                new Card(this, "еда", "Салат", 30, R.drawable.salate),
 
-                new Card(this, "инструменты", "отвёртка", 30),
-                new Card(this, "инструменты", "молоток", 30),
+                new Card(this, "инструменты", "Отвёртка", 30, R.drawable.screwdriver),
+                new Card(this, "инструменты", "Молоток", 30, R.drawable.hummer),
 
-                new Card(this, "автомобильные", "шины", 30),
-                new Card(this, "автомобильные", "диски", 30),
+                new Card(this, "автомобильные", "Шины", 30, R.drawable.stire),
+                new Card(this, "автомобильные", "Диски", 30, R.drawable.disk),
         };
         for (var card: cards) {
             this.scrollBarBody.addView(card);
@@ -77,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MAP SIZE", Integer.toString((prices.size())));
         for (var card: this.cards) {
             if (card.count == 0) continue;
-            prices.put(card.name.getText().toString(), card.price * card.count);
+            prices.put(card.nameText.getText().toString(), card.price * card.count);
         }
 
         if (prices.size() == 0) {

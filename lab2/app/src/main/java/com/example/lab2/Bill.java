@@ -1,8 +1,10 @@
 package com.example.lab2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -38,7 +40,7 @@ public class Bill extends AppCompatActivity {
             Integer sum = 0;
             for (var pair: prices.entrySet()) {
                 sum += pair.getValue();
-                this.addPriceRow(pair.getKey() + pair.getValue(), pair.getValue());
+                this.addPriceRow(pair.getKey(), pair.getValue());
             }
 
             this.summa.setText((String)this.summa.getText() + sum);
@@ -47,8 +49,14 @@ public class Bill extends AppCompatActivity {
 
     private void addPriceRow(String product, Integer price) {
         var textView = new TextView(this);
-        textView.setText(product);
-        textView.setEllipsize(TextUtils.TruncateAt.MIDDLE);
+        var text = product + " " + price;
+        textView.setText(text);
+        textView.setTextSize(40);
         this.priceContainer.addView(textView);
     }
+
+    public void Back(View view) {
+        finish();
+    }
+
 }

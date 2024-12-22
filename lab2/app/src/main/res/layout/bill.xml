@@ -8,6 +8,7 @@
     tools:context=".Bill">
 
     <ScrollView
+        android:id="@+id/siz"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -30,8 +31,15 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="middle"
                 android:maxLines="1"
-                android:text="Всего: dsf dfds dsf ds s d sd sds s"
-                android:textSize="34sp" />
+                android:text="Всего: "
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                android:onClick="Back"/>
         </LinearLayout>
     </ScrollView>
 
