@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">lab6</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="my_widget_text">booo hhahaha</string>
+
+    <!--Fact strings-->
+    <string name="fact01">Муравьи способны уклониться от излучения микроволн</string>
+    <string name="fact02">Удар молнии может достигать температуры 30000 градусов по Цельсию</string>
+    <string name="fact03">Камни самостоятельно перемещаются по высохшему озеру Рейстрек-Плайя</string>
+    <string name="fact04">Старейшее животное на Земле — 192-летняя черепаха Джонатан. Она появилась на свет примерно в 1832 году и проживает на о. Святой Елены</string>
+    <string name="fact05">У некоторых  рыб, земноводных и рептилий есть так называемый «третий глаз», который помогает им чувствовать интенсивность света</string>
+    <string name="fact06">Черный скорпион под ультрафиолетовым излучением</string>
+    <string name="fact07">Это Анабас. С помощью плавников она умеет ползать по земле и лазить по деревьям</string>
+    <string name="fact08">Это корень дерева и не ветка, а спекшийся грунт, который образуется от мощного удара молнии в песок или горную породу. Он называется фульгурит</string>
+    <string name="fact09">Морские выдры держатся лапками во сне, чтобы течение не унесло их в разные стороны</string>
+    <string name="fact10">В Норвегии живет король пингвинов Нильс Улаф. Король страны лично назначил его командующим королевской гвардией</string>
+</resources>
